@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import About from './About';
 import Notfound from './NotFound';
+import Portfolio from './Portfolio';
+import Price from './Price';
+import Services from './Services';
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 
@@ -13,6 +16,9 @@ const routing = (
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/price" component={Price} />
         <Route component={Notfound} />
       </Switch>
     </div>

@@ -12,12 +12,6 @@ code {
     monospace;
 }
 
-
-
-
-
-
-
 body {
   background-color: #fbfbfb;
   margin: 8px auto;
@@ -114,15 +108,25 @@ body {
     background-color: #ff4e2e;
     border: none;
     color: #fff;
-    margin: 50px auto;
+    cursor: pointer;
+  }
+
+  .whatido .about_link{
+    width: 201px;
+    height: 34px;
+    margin: 53px auto;
   }
 
   .one .block-one {
-    width: 188px;
+    width: 201px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .one .block-one .img1{
+    margin-right: 18px;
   }
 
   .block-one img {
@@ -237,6 +241,7 @@ body {
     color: #fff;
     margin-top: 10px;
     margin: 34px auto;
+    cursor: pointer;
   }
 
   .slider {
@@ -259,7 +264,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 231px;
+    height: 340px;;
     background: linear-gradient(to right top,#ff8f5a,#ff2f96);
     align-items: center;
   }
@@ -315,7 +320,7 @@ body {
   .circle-left {
      margin-top:53px;
      align-items: center;
-     margin-left: -681px;
+     margin-left: -341px;
      display: flex;
      position: absolute;
      align-items: center;
@@ -334,7 +339,7 @@ body {
   .circle-right {
     margin-top: 53px;
     align-items: center;
-    margin-left: 680px;
+    margin-left: 342px;
     display: flex;
     position: absolute;
     align-items: center;
@@ -367,7 +372,7 @@ body {
   }
 
   .contact{
-    width: 200px;
+    width: 228px;
     height: 103px;
     display: flex;
     flex-direction: column;
@@ -381,7 +386,7 @@ body {
   }
 
   .social button {
-    width: 160px;
+    width: 100%;
     height: 40px;
     background-color: white;
     color: #f53f4f;
@@ -390,46 +395,69 @@ body {
     transition: 0.5s;
   }
 
+  .social button:hover{
+    background-color: #f82370;
+    color: #fff;
+  }
+
   .fa-phone{
     color: #ff6475;
+    margin-right: 10px;
   }
 
   .fa-envelope {
     color: #ff4c84;
+    margin-right: 10px;
   }
 
   .social .icons {
     height: 50px;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3px;
   }
 
-  .social .wk-icon {
-    background-image: url('./img/sprite.png');
-    background-position: -42px -1px;
-    width: 42px;
-    height: 39px;
+  i.fab:nth-child(1) {
+    font-size: 25pt;
+    color: #4c75a3;
+    transition: .5s;
   }
 
-  .social .fb-icon {
-    background-image: url('./img/sprite.png');
-    background-position: -5px -1px;
-    width: 39px;
-    height: 39px;
+  i.fab:nth-child(1):hover  {
+    color: #194371;
   }
 
-  .social .twiter-icon {
-    background-image: url('./img/sprite.png');
-    background-position: -134px -1px;
-    width: 42px;
-    height: 39px;
+  i.fab:nth-child(2) {
+    font-size: 22pt;
+    color: #3b5998;
+    transition: .5s;
   }
 
-  .social .instagram-icon {
-    background-image: url('./img/sprite.png');
-    background-position: -87px -1px;
-    width: 42px;
-    height: 39px;
+  i.fab:nth-child(2):hover{
+    color: #0b1e48;
   }
+
+  i.fab:nth-child(3) {
+    font-size: 25pt;
+    color: #00aced;
+    transition: .5s;
+  }
+
+  i.fab:nth-child(3):hover{
+    color: #3191b5;
+  }
+
+  i.fab:nth-child(4) {
+    font-size: 25pt;
+    color: #833AB4;
+    transition: .5s;
+  }
+
+  i.fab:nth-child(4):hover{
+    color: #C13584;
+  }
+
 
   .footer-menu p {
     cursor: pointer;
@@ -453,9 +481,7 @@ body {
 
 
 
-
-
-  @media (max-width: 1204px){
+@media (max-width: 1204px){
     .block-top .block-name h2{
         font-size: 63pt;
     }
