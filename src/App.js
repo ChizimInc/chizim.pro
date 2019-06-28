@@ -1,8 +1,10 @@
+import './Preloader.css';
 import React,{ Component } from 'react';
 import { Preloader, Placeholder } from 'react-preloading-screen';
-import './Preloader.css';
 import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import './normalise.css'
 import MetaTags from 'react-meta-tags';
 import { Link } from 'react-router-dom'
 // image import
@@ -27,7 +29,17 @@ import vk from './img/vk.png';
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { pos : 0 };
+    this.state = {
+      pos : 0,
+      burger_status: 0
+    };
+  }
+
+  btn_active = (e) => {
+    e.preventDefault();
+    let btn = document.querySelector('.menu-btn');
+    btn.classList.toggle("menu-btn_active");
+    document.querySelector('.menu-nav').classList.toggle('.menu-nav_active');
   }
 
   toRight(){
@@ -47,11 +59,14 @@ class App extends Component {
 render(){
   return (
     <div className="container">
-      <Preloader>
+      <Preloader fadeDuration="1500">
           <Placeholder>
           <div className="container_preloader">
-            <div className="loading">
-              <span>Loading...</span>
+            <div className="loading"></div>
+            <div className="circle_c">
+              <div id="loader-wrapper">
+                <div id="loader"></div>
+              </div>
             </div>
           </div>
           </Placeholder>
@@ -61,6 +76,21 @@ render(){
               <Link className="link" to="/services"><p>Услуги</p></Link>
               <Link className="link" to="/portfolio"><p>Портфолио</p></Link>
               <Link className="link" to="/price"><p>Стоймость</p></Link>
+          </div>
+          <div className="left_mobile">
+            <div class="section">
+              <div class="menu-block">
+                <a href="#" class="menu-btn" ref={this.btn} onClick={this.btn_active.bind(this)}>
+                  <span></span>
+                </a>
+                <nav class="menu-nav" ref={this.nav}>
+                  <a href="#">Main</a>
+                  <a href="#">Porfolio</a>
+                  <a href="#">About</a>
+                  <a href="#">Contacts</a>
+                </nav>
+              </div>
+            </div>
           </div>
           <div className="right">
               <p>+37360999331</p>
@@ -78,7 +108,7 @@ render(){
           <div className="block-name">
               <h2>Chizim Cezar</h2>
               <p>Frontend и backend-разработчик</p>
-              <button><Link className="link" to="/about">Узнать больше</Link></button>
+              <Link className="about_link" to="/about"><button className="btn">Узнать больше</button></Link>
           </div>
           <div className="icons">
               <img src={a3} id="one"/>
@@ -135,26 +165,26 @@ render(){
 
               <div className="images-container">
                   <div className="images-items" style={ { marginLeft: `${ this.state.pos }px` } }>
-                      <div className="image">
-                        <div></div>
+                      <Link className="link_port" to="/portfolio/restaurant"><div className="image">
+                        <div className="pics1"></div>
                         <p>site1</p>
-                      </div>
-                      <div className="image">
-                        <div></div>
+                      </div></Link>
+                      <Link className="link_port" to="/portfolio/site2"><div className="image">
+                        <div className="pics2"></div>
                         <p>site2</p>
-                      </div>
-                      <div className="image">
-                        <div></div>
+                      </div></Link>
+                      <Link className="link_port" to="/portfolio/site3"><div className="image">
+                        <div className="pics3"></div>
                         <p>site3</p>
-                      </div>
-                      <div className="image">
-                        <div></div>
+                      </div></Link>
+                      <Link className="link_port" to="/portfolio/site4"><div className="image">
+                        <div className="pics4"></div>
                         <p>site4</p>
-                      </div>
-                      <div className="image">
-                        <div></div>
+                      </div></Link>
+                      <Link className="link_port" to="/portfolio/site5"><div className="image">
+                        <div className="pics5"></div>
                         <p>site5</p>
-                      </div>
+                      </div></Link>
                   </div>
 
               </div>
@@ -208,7 +238,7 @@ render(){
       </div>
 
       <footer>
-        &copy; Chizim Cezar, 2018-2019
+        &copy; Chizim Cezar, 2017-2019
       </footer>
   </div>
   );
