@@ -8,6 +8,7 @@
   background-color: #2f2c27;
   width: 100%;;
   overflow-x: hidden;
+  font-family: noset !important;
 }
 
 .container1 {
@@ -437,6 +438,7 @@ header .left_header{
 .central_elem img{
   width: 15%;
   margin: 0px auto;
+  cursor: pointer;
 }
 
 .slider_header .arrows_left{
@@ -445,10 +447,17 @@ header .left_header{
   justify-content: space-evenly;
 }
 
+.slider_header .arrows_left #to_left{
+  cursor: pointer;
+}
+
 .slider_header .arrows_right{
   display: flex;
   width: 156px;
   justify-content: space-evenly;
+}
+.slider_header .arrows_right #to_right{
+  cursor: pointer;
 }
 
 .arrows_left .elem_2{

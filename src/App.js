@@ -3,7 +3,7 @@ import React,{ Component } from 'react';
 import { Preloader, Placeholder } from 'react-preloading-screen';
 import logo from './logo.svg';
 import './App.css';
-import './index.css'
+//import './index.css'
 import './normalise.css'
 import MetaTags from 'react-meta-tags';
 import { Link } from 'react-router-dom'
@@ -42,16 +42,16 @@ class App extends Component {
     document.querySelector('.menu-nav').classList.toggle('.menu-nav_active');
   }
 
-  toRight(){
-    if (this.state.pos <= 0 && this.state.pos > -480 ) {
-      let local_pos = this.state.pos - 241;
+  toRight = () => {
+    if (this.state.pos <= 0 && this.state.pos > -660 ) {
+      let local_pos = this.state.pos - 330;
       this.setState({pos: local_pos});
     }
   }
 
-  toLeft(){
+  toLeft = () => {
     if (this.state.pos <= 0 && this.state.pos != 0) {
-      let local_pos = this.state.pos + 241;
+      let local_pos = this.state.pos + 330;
       this.setState({pos: local_pos});
     }
   }
@@ -78,12 +78,12 @@ render(){
               <Link className="link" to="/price"><p>Стоймость</p></Link>
           </div>
           <div className="left_mobile">
-            <div class="section">
-              <div class="menu-block">
-                <a href="#" class="menu-btn" ref={this.btn} onClick={this.btn_active.bind(this)}>
+            <div className="section">
+              <div className="menu-block">
+                <a href="#" className="menu-btn" ref={this.btn} onClick={this.btn_active.bind(this)}>
                   <span></span>
                 </a>
-                <nav class="menu-nav" ref={this.nav}>
+                <nav className="menu-nav" ref={this.nav}>
                   <a href="#">Main</a>
                   <a href="#">Porfolio</a>
                   <a href="#">About</a>
@@ -228,10 +228,10 @@ render(){
               <div className="social">
                   <button>Заказать звонок</button>
                   <div className="icons">
-                      <i className="fab fa-vk"></i>
-                      <i className="fab fa-facebook-f"></i>
-                      <i className="fab fa-twitter"></i>
-                      <i className="fab fa-instagram"></i>
+                      <i className="fab fa-vk vk"></i>
+                      <i className="fab fa-facebook-f facebook"></i>
+                      <i className="fab fa-twitter twitter"></i>
+                      <i className="fab fa-instagram instagram"></i>
                   </div>
               </div>
           </div>

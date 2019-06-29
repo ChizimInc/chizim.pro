@@ -33,8 +33,36 @@ class Portfolio_restaurant extends Component {
     };
   }
 
-  to_left = () => {
+  componentDidMount(){
+    document.title = "Portfolio | Restaurant Chekhoff";
+  }
 
+  to_right = () => {
+    if (this.state.pos <= 0 && this.state.pos > -480 ) {
+      this.state.pos = this.state.pos - 240;
+      this.setState({pos: this.state.pos});
+    }
+  }
+
+  to_left = () => {
+    if (this.state.pos <= 0 && this.state.pos != 0) {
+      this.state.pos = this.state.pos + 240;
+      this.setState({pos: this.state.pos});
+    }
+  }
+
+  person_down = () => {
+    if (this.state.person > 1) {
+      this.state.person = this.state.person - 1;
+      this.setState({person: this.state.person});
+    }
+  }
+
+  person_up = () => {
+    if (this.state.person < 10) {
+      this.state.person = this.state.person + 1;
+      this.setState({person: this.state.person});
+    }
   }
 
   menu_active = (e) => {
@@ -175,8 +203,7 @@ class Portfolio_restaurant extends Component {
           </div>
           <div className="slider_header">
             <div className="arrows_left">
-              <img id="to_left" src={forma2}/>
-              <img className="elem_2" src={shape}/>
+              <img id="to_left" src={forma2} onClick={this.to_left}/>
             </div>
             <div className="central_elem">
                 <img className="elem_one" src={meniu_elem_6_hover}/>
@@ -187,12 +214,24 @@ class Portfolio_restaurant extends Component {
                 <img src={meniu_elem_1}/>
             </div>
             <div className="arrows_right">
-              <img className="elem_1" src={shape}/>
-              <img id="to_right" src={forma1}/>
+              <img id="to_right" src={forma1} onClick={this.to_right.bind(this)}/>
             </div>
           </div>
           <div className="slider_body">
-            <div className="slider_1">
+            <div className="slider_1" style={ { marginLeft: `${ this.state.pos }px` } }>
+              <div className="element_slider">
+                <div className="content_slide">
+                  <div className="top">
+                    <p>Блюдо дня</p>
+                  </div>
+                  <div className="bottom">
+                    <p>125 бат</p>
+                  </div>
+                </div>
+                <div className="slide_name">
+                  <p>Supa</p>
+                </div>
+              </div>
               <div className="element_slider">
                 <div className="content_slide">
                   <div className="top">
@@ -272,7 +311,20 @@ class Portfolio_restaurant extends Component {
                 </div>
               </div>
             </div>
-            <div className="slider_2">
+            <div className="slider_2" style={ { marginLeft: `${ this.state.pos }px` } }>
+              <div className="element_slider">
+                <div className="content_slide">
+                  <div className="top">
+                    <p>Блюдо дня</p>
+                  </div>
+                  <div className="bottom">
+                    <p>125 бат</p>
+                  </div>
+                </div>
+                <div className="slide_name">
+                  <p>Supa</p>
+                </div>
+              </div>
               <div className="element_slider">
                 <div className="content_slide">
                   <div className="top">
@@ -419,13 +471,13 @@ class Portfolio_restaurant extends Component {
                       </div>
                       <div className="person_block">
                         <div id="pers_d" className="arrow_down">
-                          <img src={to_bottom}/>
+                          <img src={to_bottom} onClick={this.person_down.bind(this)}/>
                         </div>
                         <div className="show_person">
-                          2
+                          {this.state.person}
                         </div>
                         <div id="pers_t" className="arrow_top">
-                          <img src={to_bottom}/>
+                          <img src={to_bottom} onClick={this.person_up.bind(this)} />
                         </div>
                       </div>
                     </div>

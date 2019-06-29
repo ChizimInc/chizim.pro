@@ -34,6 +34,10 @@
     .icons #_div_ {
         margin-left: 491px;
     }
+
+    .slider {
+        width: 100%;
+    }
 }
 
 /* ----------------Tablet resolution------------------------ */
@@ -71,10 +75,6 @@
 @media (max-width: 812px) {
     .whatido .one {
         flex-wrap: wrap;
-    }
-
-    .slider {
-        width: 100%;
     }
 
     .block-top .block-name {
