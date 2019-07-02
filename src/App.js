@@ -24,6 +24,7 @@ import responsive from './img/responsive.png';
 import tools from './img/tools.png';
 import twitter_logo from './img/twitter-logo.png';
 import vk from './img/vk.png';
+import logo_text from './img/logo_text_2.png'
 // end of import image
 
 class App extends Component {
@@ -71,7 +72,7 @@ render(){
           </div>
           </Placeholder>
       </Preloader>
-      <div className="menu">
+      <div className="app_menu">
           <div className="left">
               <Link className="link" to="/services"><p>Услуги</p></Link>
               <Link className="link" to="/portfolio"><p>Портфолио</p></Link>
@@ -106,8 +107,8 @@ render(){
 
       <div className="block-top">
           <div className="block-name">
-              <h2>Chizim Cezar</h2>
-              <p>Frontend и backend-разработчик</p>
+              <img src={logo_text}/>
+              <p>Frontend и backend-разработка</p>
               <Link className="about_link" to="/about"><button className="btn">Узнать больше</button></Link>
           </div>
           <div className="icons">
@@ -120,7 +121,7 @@ render(){
       </div>
 
       <div className="whatido">
-          <h2>Что я делаю</h2>
+          <h2>Что мы делаем</h2>
           <div className="one">
               <div className="block-one">
                   <img src={programming} className="img1"/>
@@ -156,7 +157,7 @@ render(){
 
       <div className="portfolio">
 
-          <h2>Примеры мойх работ</h2>
+          <h2>Примеры наших работ</h2>
 
           <div className="slider">
               <div className="circle-left" onClick={this.toLeft.bind(this)}>
@@ -169,7 +170,7 @@ render(){
                         <div className="pics1"></div>
                         <p>site1</p>
                       </div></Link>
-                      <Link className="link_port" to="/portfolio/site2"><div className="image">
+                      <Link className="link_port" to="/portfolio/city_hall_page"><div className="image">
                         <div className="pics2"></div>
                         <p>site2</p>
                       </div></Link>
@@ -200,7 +201,7 @@ render(){
 
       <div className="reclama-block">
           <h2>Адаптивная вёрстка под все устройства
-                  и браузеры от 3000 рублей всего за 4 часа.*</h2>
+                  и браузеры от 50 доларов всего за 4 часа.*</h2>
 
           <p>* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,
                   в зависимости от сложности задач.</p>

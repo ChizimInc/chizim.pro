@@ -1,0 +1,37 @@
+@media (max-width: 870px) {
+    .site_block_p {
+      width: 90%;
+    }
+}
+
+@media (max-width: 588px) {
+  .site_block_p {
+    width: 90%;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 538px) {
+  .site_block_p {
+    width: 90%;
+    height: 35vh;
+  }
+}
+
+@media (max-width: 440px) {
+  .site_block_p {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 364px) {
+  .site_block_p {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 325px) {
+  .site_block_p {
+    height: 20vh;
+  }
+}

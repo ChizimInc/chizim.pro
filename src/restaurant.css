@@ -6,7 +6,7 @@
 .restaurant_container{
   margin: 0px;
   background-color: #2f2c27;
-  width: 100%;;
+  width: 101%;;
   overflow-x: hidden;
   font-family: noset !important;
 }
@@ -90,6 +90,11 @@ header .left_header{
   display: flex;
   justify-content: flex-end;
 }
+
+.meniu > p {
+ cursor: pointer;
+}
+
 
 .right_header .social_icon {
   width: 19%;
@@ -294,6 +299,7 @@ header .left_header{
 
 .content_slide{
   height: 160px;
+  background-image: url('./img/portfolio/restaurant/meniu_pics1.jpg');
 }
 
 .content_slide .top{

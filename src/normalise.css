@@ -103,9 +103,6 @@
 }
 
 @media (max-width: 615px){
-    .menu{
-        flex-direction: column;
-    }
 
     .left , .right  {
         margin: 0px auto;

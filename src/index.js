@@ -7,6 +7,7 @@ import Portfolio from './Portfolio';
 import Price from './Price';
 import Services from './Services';
 import Portfolio_restaurant from './Portfolio_restaurant'
+import Hall from './city_hall_page'
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 
@@ -19,6 +20,7 @@ const routing = (
         <Route path="/services" component={Services} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route path="/portfolio/restaurant" component={Portfolio_restaurant} />
+        <Route path="/portfolio/city_hall_page" component={Hall} />
         <Route path="/price" component={Price} />
         <Route component={Notfound} />
       </Switch>
