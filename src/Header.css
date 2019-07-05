@@ -1,0 +1,118 @@
+/* @font-face {
+  font-family: "SanFrancisco";
+  src: url("./SF-Font-Pro.dmg");
+} */
+
+.right > button {
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  margin-top: 5px;
+  color: #f53f4f;
+  border: 1px solid #f82370;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+body > header:nth-child(1) {
+background-color: #f7efef;
+display: flex;
+}
+
+body > header {
+/* font-family: SanFrancisco; */
+background-color: #f5f6fa;
+}
+
+.right > .social > .icons {
+  align-items: center;
+}
+
+.right > .social{
+  width: 180px;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.app_menu {
+width: 100vw;
+height: 500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image: url('./img/Ellipse_1.png');
+background-position: right bottom;
+background-repeat: no-repeat;
+background-size: 490px 89%;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.top {
+display: flex;
+width: 890px;
+justify-content: space-between;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.left {
+display: flex;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.right {
+display: flex;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.left > p:nth-child(1) {
+margin-right: 32px;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.left > p:nth-child(2) {
+margin-right: 32px;
+}
+
+/* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
+
+.right > p:nth-child(1) {
+margin-right: 25px;
+}
+
+.block_name_butt button {
+width: 201px;
+height: 34px;
+background-color: #ff4e2e;
+border: none;
+color: #fff;
+margin-top: 0;
+}
+
+.block_name_butt{
+margin-top: 70px;
+}
+
+.block_name {
+margin-top: 78px;
+}
+
+.block_name > img {
+width: 300px;
+}
+
+.block_name > p {
+font-size: 15pt
+}
+
+.menu_content {
+display: flex;
+flex-direction: column;
+width: 890px;
+justify-content: center;
+height: 100%;
+}

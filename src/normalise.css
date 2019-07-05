@@ -1,7 +1,5 @@
 @media (max-width: 1204px){
-    .block-top .block-name h2{
-        font-size: 63pt;
-    }
+
 }
 
 @media (max-width: 1164px){
@@ -9,31 +7,12 @@
 }
 
 @media only screen and (max-width: 1178px){
-    .icons #_div_ {
-        margin-left: 554px;
-    }
-    .icons #a {
-      left: 90%
-    }
 
-    .icons #copy{
-      top: 335px;
-    }
 }
 
 
 @media (max-width: 1036px) {
-    .block-top .block-name h2{
-        font-size: 54pt;
-    }
 
-    .block-top .block-name p {
-        margin-top: -69px;
-    }
-
-    .icons #_div_ {
-        margin-left: 491px;
-    }
 
     .slider {
         width: 100%;
@@ -43,11 +22,20 @@
 /* ----------------Tablet resolution------------------------ */
 
 @media (max-width: 1024px) {
-  .menu .left {
-    display: none;
+
+
+  @-moz-document url-prefix() {
+    .circle-left  img {
+       margin-right: 18px;
+    }
   }
-  .menu .left_mobile {
-    display: block;
+
+  .slider {
+    width: 649px;
+  }
+
+  .circle-left  img {
+     margin-left: 4px;
   }
 }
 
@@ -57,19 +45,29 @@
     }
 }
 
-@media (max-width: 978px) {
-    .block-top .block-name {
-        margin: 70px 100px;
-        font-size: 45pt;
-    }
+@media (max-width: 950px) {
+  .app_menu > .top{
+    width: 90%;
+  }
 
-    .block-top .block-name p {
-        margin-top: -55px;
-    }
+  .app_menu > .menu_content {
+    width: 90%;
+  }
 
-    .icons #a {
-        margin-left: 319px;
-    }
+}
+
+@media (max-width: 842px) {
+  .reclama-block h2 {
+    width: 90%;
+  }
+
+  .reclama-block p {
+    width: 90%;
+  }
+
+  .reclama-block {
+    height: 363px;;
+  }
 }
 
 @media (max-width: 812px) {
@@ -77,34 +75,181 @@
         flex-wrap: wrap;
     }
 
-    .block-top .block-name {
-        margin: 70px 50px;
+    .block_name > img {
+      width: 222px;
     }
 
-    .block-top .block-name h2 {
-        font-size: 40pt;
+    .block_name > p {
+      font-size: 12pt;
     }
 
-    .block-top .block-name p {
-        margin-top: -49px;
-        margin-bottom: -10px;
-        font-size: 12pt;
-    }
-
-    .icons #_div_ {
-        margin-left: 89px;
+    .block_name_butt button {
+      width: 168px;
     }
 }
 
-@media (max-width: 710px){
-    .block-top {
-        background-position: 165% 0px;
-    }
+@media (max-width: 748px) {
+  .slider{
+    width: 297px;
+  }
+  .circle-right  img {
+      margin-left: -5px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .app_menu {
+    background-position: right 55px;
+  }
+
+  .block_name {
+    margin-top: 790px;
+  }
+
+  .menu_content {
+    align-items: center;
+  }
+
+  .container > header:nth-child(1) {
+    height: 889px;
+  }
+
+  .block_name > img {
+    width: 300px;
+  }
+
+  .block_name > p {
+    font-size: 15pt;
+  }
+
+  .block_name_butt button {
+    width: 201px;
+  }
+
+  .footer-content{
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .reclama-block {
+    height: 423px;;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    width: unset;
+  }
+
+  .footer-menu {
+    width: 88%;
+  }
+
+  .social .icons {
+    margin-top: 13px;
+  }
+
+  .footer-content .social {
+    margin-top: 3px;
+  }
+
+  .footer-content {
+    width: 200px;
+    height: unset !important;
+  }
+
+  .top {
+    justify-content: unset;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .app_menu {
+    height: 575px;
+    background-size: 468px 70%;
+    background-position: right 148px;
+  }
+
+  .container > header:nth-child(1){
+    height: 993px;
+  }
+
+}
+
+@media (max-width: 490px) {
+  .reclama-block {
+    height: 480px;;
+  }
+}
+
+@media (max-width: 472px) {
+  .app_menu {
+    background-size: 100% calc(100vw);
+    background-position: -9px 112px;
+  }
+}
+
+@media (max-width: 414px) {
+  .reclama-block {
+    height: 545px;;
+  }
+
+  .one .block-one {
+    margin-top: 27px;
+  }
+}
+
+@media (max-width: 330px) {
+  .reclama-block {
+    height: 586px;;
+  }
+}
+
+
+@media (max-width: 380px) {
+
+  .block_name {
+    margin-top: calc(190vw);
+  }
+
+}
+
+@media (max-width: 340px) {
+  .image {
+    margin: 0px 27px;
+    width: 277px;
+  }
+
+  .circle-left  img {
+     margin-right: 6px;
+  }
+
+  .circle-right  img {
+      margin-left: -22px;
+  }
+}
+
+@media (max-width: 328px){
+  .block_name > img {
+    width: 205px;
+  }
+
+  .block_name > p {
+    font-size: 12pt;
+  }
+
+  .container > header:nth-child(1) {
+    height: 803px;
+  }
+
 }
 
 @media (max-width: 615px){
 
-    .left , .right  {
-        margin: 0px auto;
-    }
 }

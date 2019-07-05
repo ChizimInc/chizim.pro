@@ -26,7 +26,7 @@
   margin: 0px auto;
 }
 
-header {
+.content > header {
   height: 110px;
   display: flex;
   flex-direction: column;
@@ -1052,7 +1052,7 @@ header .left_header{
     height: 50%;
   }
 
-  header{
+  .content > header{
     height: 176px;
   }
 

@@ -2,7 +2,9 @@ import './Preloader.css';
 import React,{ Component } from 'react';
 import { Preloader, Placeholder } from 'react-preloading-screen';
 import logo from './logo.svg';
+import Header from './Header';
 import './App.css';
+import { animateScroll as scroll } from "react-scroll";
 //import './index.css'
 import './normalise.css'
 import MetaTags from 'react-meta-tags';
@@ -36,6 +38,13 @@ class App extends Component {
     };
   }
 
+  componentDidMount(){
+    if (document.body.clientWidth < 1024 ) {
+      let portfolio_link
+    }
+
+  }
+
   btn_active = (e) => {
     e.preventDefault();
     let btn = document.querySelector('.menu-btn');
@@ -44,9 +53,22 @@ class App extends Component {
   }
 
   toRight = () => {
-    if (this.state.pos <= 0 && this.state.pos > -660 ) {
-      let local_pos = this.state.pos - 330;
-      this.setState({pos: local_pos});
+    if (document.body.clientWidth < 1024 ) {
+      if (this.state.pos <= 0 && this.state.pos > -990 ) {
+        let local_pos = this.state.pos - 330;
+        this.setState({pos: local_pos});
+      }
+      if (document.body.clientWidth < 748) {
+        if (this.state.pos <= 0 && this.state.pos > -1320 ) {
+          let local_pos = this.state.pos - 330;
+          this.setState({pos: local_pos});
+        }
+      }
+    }else{
+      if (this.state.pos <= 0 && this.state.pos > -660 ) {
+        let local_pos = this.state.pos - 330;
+        this.setState({pos: local_pos});
+      }
     }
   }
 
@@ -72,55 +94,8 @@ render(){
           </div>
           </Placeholder>
       </Preloader>
-      <div className="app_menu">
-          <div className="left">
-              <Link className="link" to="/services"><p>Услуги</p></Link>
-              <Link className="link" to="/portfolio"><p>Портфолио</p></Link>
-              <Link className="link" to="/price"><p>Стоймость</p></Link>
-          </div>
-          <div className="left_mobile">
-            <div className="section">
-              <div className="menu-block">
-                <a href="#" className="menu-btn" ref={this.btn} onClick={this.btn_active.bind(this)}>
-                  <span></span>
-                </a>
-                <nav className="menu-nav" ref={this.nav}>
-                  <a href="#">Main</a>
-                  <a href="#">Porfolio</a>
-                  <a href="#">About</a>
-                  <a href="#">Contacts</a>
-                </nav>
-              </div>
-            </div>
-          </div>
-          <div className="right">
-              <p>+37360999331</p>
-              <button>Заказать звонок</button>
-          </div>
-
-
-          <div className="get-order">
-              <input type="text" placeholder="name"/>
-              <input type="text" placeholder="phone"/>
-          </div>
-      </div>
-
-      <div className="block-top">
-          <div className="block-name">
-              <img src={logo_text}/>
-              <p>Frontend и backend-разработка</p>
-              <Link className="about_link" to="/about"><button className="btn">Узнать больше</button></Link>
-          </div>
-          <div className="icons">
-              <img src={a3} id="one"/>
-              <img src={div} id="_div"/>
-              <img src={a} id="a"/>
-              <img src={div} id="_div_"/>
-              <img src={a1} id="copy"/>
-          </div>
-      </div>
-
-      <div className="whatido">
+      <Header/>
+      <div className="whatido" id='services'>
           <h2>Что мы делаем</h2>
           <div className="one">
               <div className="block-one">
@@ -155,7 +130,7 @@ render(){
           <Link className="about_link" to="/about"><button>Узнать больше</button></Link>
       </div>
 
-      <div className="portfolio">
+      <div className="portfolio" id='portfolio'>
 
           <h2>Примеры наших работ</h2>
 
@@ -170,7 +145,7 @@ render(){
                         <div className="pics1"></div>
                         <p>site1</p>
                       </div></Link>
-                      <Link className="link_port" to="/portfolio/city_hall_page"><div className="image">
+                      <Link className="link_port" to="/portfolio/city_hall_page#container_hall"><div className="image">
                         <div className="pics2"></div>
                         <p>site2</p>
                       </div></Link>
@@ -199,7 +174,7 @@ render(){
 
       </div>
 
-      <div className="reclama-block">
+      <div className="reclama-block" id='price'>
           <h2>Адаптивная вёрстка под все устройства
                   и браузеры от 50 доларов всего за 4 часа.*</h2>
 
@@ -229,10 +204,10 @@ render(){
               <div className="social">
                   <button>Заказать звонок</button>
                   <div className="icons">
-                      <i className="fab fa-vk vk"></i>
-                      <i className="fab fa-facebook-f facebook"></i>
-                      <i className="fab fa-twitter twitter"></i>
-                      <i className="fab fa-instagram instagram"></i>
+                      <a href='https://vk.com/chizim' target="_blank"><i className="fab fa-vk vk"></i></a>
+                      <a href='https://www.facebook.com/profile.php?id=100008270531523' target="_blank"><i className="fab fa-facebook-f facebook"></i></a>
+                      <a href='https://t.me/ChizimWebStudio' target="_blank"><i className="fab fa-telegram twitter"></i></a>
+                      <a href='https://www.instagram.com/cezar_chizim/?hl=en' target="_blank"><i className="fab fa-instagram instagram"></i></a>
                   </div>
               </div>
           </div>

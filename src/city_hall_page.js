@@ -1,21 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './hall.css';
 import { Link } from 'react-router-dom'
 
-const Hall = () => {
+class Hall extends Component {
 
   constructor(props){
     super(props);
     this.state = {
       pos : 0
-    }
-
-
-
+    };
   }
 
+  render(){
   return(
-    <div className='container_hall'>
+    <div className='container_hall' id='container_hall'>
       <header>
         <div className="top">
           <div className="social-top">
@@ -290,6 +288,7 @@ const Hall = () => {
 
     </div>
   )
+  }
 }
 
 export default Hall;
