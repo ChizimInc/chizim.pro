@@ -14,7 +14,6 @@ import a from './img/a.png';
 import a1 from './img/a1.png';
 import a2 from './img/a2.png';
 import a3 from './img/a3.png';
-import b1 from './img/b1.jpg';
 import div from './img/div.png';
 import arrow from './img/arrow.png';
 import call_answer from './img/call-answer.png';

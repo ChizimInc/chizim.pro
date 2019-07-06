@@ -1,13 +1,37 @@
 @media (max-width: 1204px){
+  .icons_header_anim > img:nth-child(1){
+    display: none;
+  }
 
+  .icons_header_anim > img:nth-child(3){
+    left: 126px;
+  }
+
+  .icons_header_anim > img:nth-child(5){
+    left: 514px;
+  }
+
+  .icons_header_anim > img:nth-child(2){
+    left: 411px;
+  }
 }
 
 @media (max-width: 1164px){
 
 }
 
-@media only screen and (max-width: 1178px){
+@media only screen and (max-width: 1159px){
+  .icons_header_anim > img:nth-child(3){
+    left: 27px;
+  }
 
+  .icons_header_anim > img:nth-child(5){
+    left: 314px;
+  }
+
+  .icons_header_anim > img:nth-child(2){
+    left: 264px;
+  }
 }
 
 
@@ -54,6 +78,24 @@
     width: 90%;
   }
 
+  .icons_header_anim > img:nth-child(3){
+    left: 27px;
+  }
+
+  .icons_header_anim > img:nth-child(5){
+    left: 314px;
+    top: -48px;
+  }
+
+  .icons_header_anim > img:nth-child(2){
+    left: 186px;
+    top: 319px;
+  }
+
+  .icons_header_anim > img:nth-child(4){
+    left: 46px;
+  }
+
 }
 
 @media (max-width: 842px) {
@@ -86,6 +128,11 @@
     .block_name_butt button {
       width: 168px;
     }
+
+    .icons_header_anim {
+      display: none;
+    }
+
 }
 
 @media (max-width: 748px) {
@@ -178,6 +225,10 @@
 
   .container > header:nth-child(1){
     height: 993px;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
   }
 
 }

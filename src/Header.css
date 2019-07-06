@@ -32,6 +32,65 @@ background-color: #f5f6fa;
   width: 180px;
 }
 
+.icons_header_anim {
+ position: absolute;
+ display: block;
+ width: 745px;
+ height: 400px;
+ top: 90px;
+ left: 90px;
+}
+
+.icons_header_anim img {
+  width: 54px;
+}
+
+.icons_header_anim > img:nth-child(1) {
+ position: absolute;
+ top: 127px;
+ left: -51px;
+ animation: A1 5s ease-in-out infinite;
+ transition: 1s;
+}
+
+
+.icons_header_anim > img:nth-child(2) {
+ width: 23px !important;
+ position: absolute;
+ left: 492px;
+ top: 300px;
+ animation: A1_2 5s ease-in-out infinite;
+ transition: 1s;
+}
+
+.icons_header_anim > img:nth-child(3) {
+ position: absolute;
+ left: 269px;
+ width: 40px !important;
+ animation: A2 5s ease-in-out infinite;
+ transition: 1s;
+}
+
+.icons_header_anim > img:nth-child(4) {
+ width: 23px !important;
+ position: absolute;
+ top: 445px;
+ left: 100px;
+ animation: A3 5s ease-in-out infinite;
+ transition: 1s;
+}
+
+.icons_header_anim > img:nth-child(5) {
+ width: 23px !important;
+ position: absolute;
+ left: 680px;
+ animation: A4 5s ease-in-out infinite;
+ transition: 1s;
+}
+
+
+
+
 /* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
 
 .app_menu {
@@ -115,4 +174,89 @@ flex-direction: column;
 width: 890px;
 justify-content: center;
 height: 100%;
+}
+
+@keyframes A1 {
+  0%{
+    margin-top: -50px;
+  }
+  25%{
+    margin-left: 5px;
+  }
+  50%{
+    margin-top: +50px;
+    margin-left: 0px;
+  }
+  75%{
+    margin-left: 5px;
+  }
+  100%{
+    margin-top: -50px;
+    margin-left: 0px;
+  }
+}
+
+@keyframes A1_2 {
+  0%{
+    margin-top: 50px;
+  }
+  25%{
+    margin-left: 5px;
+  }
+  50%{
+    margin-top: -50px;
+    margin-left: 0px;
+  }
+  75%{
+    margin-left: 5px;
+  }
+  100%{
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+}
+
+@keyframes A2 {
+  0%{
+    transform: rotate(-10deg);
+    margin-left: -10px;
+  }
+  50%{
+    transform: rotate(50deg);
+    margin-left: 10px;
+  }
+  100%{
+    transform: rotate(-10deg);
+    margin-left: -10px;
+  }
+}
+
+@keyframes A3 {
+  0%{
+    transform: rotate(-10deg);
+    margin-left: -20px;
+  }
+  50%{
+    transform: rotate(50deg);
+    margin-left: 20px;
+  }
+  100%{
+    transform: rotate(-10deg);
+    margin-left: -20px;
+  }
+}
+
+@keyframes A4 {
+  0%{
+    transform: rotate(50deg);
+    margin-left: 10px;
+  }
+  50%{
+    transform: rotate(-30deg);
+    margin-left: -20px;
+  }
+  100%{
+    transform: rotate(50deg);
+    margin-left: 10px;
+  }
 }

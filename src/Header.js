@@ -2,19 +2,31 @@ import React,{ Component } from 'react';
 import './Header.css'
 import Ellipse_1 from './img/Ellipse_1.png'
 import logo_text_2 from './img/logo_text_2.png';
+import div from './img/div.png'
+import a from './img/a.png'
+import a1 from './img/a1.png'
+import a2 from './img/a2.png'
+import a3 from './img/a3.png'
 
 class Header extends Component{
   render(){
     return(
       <header>
-    		<div class="app_menu">
-    			<div class="top">
-    				<div class="left">
+    		<div className="app_menu">
+        <div className='icons_header_anim'>
+         <img src={div}/>
+         <img src={a}/>
+         <img src={a1}/>
+         <img src={a2}/>
+         <img src={a3}/>
+        </div>
+    			<div className="top">
+    				<div className="left">
     					<p>Услуги</p>
     					<p>Портфолио</p>
     					<p>Стоймость</p>
     				</div>
-    				<div class="right">
+    				<div className="right">
             <div className="social">
                 <div className="icons">
                     <a href='https://vk.com/chizim' target="_blank"><i className="fab fa-vk vk"></i></a>
@@ -25,12 +37,12 @@ class Header extends Component{
             </div>
     				</div>
     			</div>
-    			<div class="menu_content">
-    				<div class="block_name">
+    			<div className="menu_content">
+    				<div className="block_name">
     					<img src={logo_text_2}/>
     					<p>Frontend и backend-разработка</p>
     				</div>
-    				<div class="block_name_butt">
+    				<div className="block_name_butt">
     					<button>Заказать звонок</button>
     				</div>
     			</div>
