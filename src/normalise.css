@@ -266,7 +266,11 @@
 @media (max-width: 380px) {
 
   .block_name {
-    margin-top: calc(190vw);
+    margin-top: calc(157vw);
+  }
+
+  .container > header:nth-child(1) {
+    height: 905px;
   }
 
 }
@@ -296,7 +300,11 @@
   }
 
   .container > header:nth-child(1) {
-    height: 803px;
+    height: 785px;
+  }
+
+  .block_name {
+    margin-top: calc(132vw);
   }
 
 }
