@@ -241,7 +241,7 @@
 
 @media (max-width: 472px) {
   .app_menu {
-    background-size: 100% calc(100vw);
+    background-size: 102% calc(100vw);
     background-position: -9px 140px;
   }
 
