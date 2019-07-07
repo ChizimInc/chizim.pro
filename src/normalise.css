@@ -241,7 +241,7 @@
 
 @media (max-width: 472px) {
   .app_menu {
-    background-size: 102% calc(100vw);
+    background-size: 103% 100vw !important;
     background-position: -9px 140px;
   }
 
@@ -267,13 +267,13 @@
 
 @media (max-width: 380px) {
 
-  .block_name {
+  /* .block_name {
     margin-top: calc(157vw);
   }
 
   .container > header:nth-child(1) {
     height: 905px;
-  }
+  } */
 
 }
 
@@ -293,7 +293,7 @@
 }
 
 @media (max-width: 328px){
-  .block_name > img {
+   .block_name > img {
     width: 205px;
   }
 
@@ -305,8 +305,12 @@
     height: 785px;
   }
 
-  .block_name {
-    margin-top: calc(132vw);
+   .block_name {
+    margin-top: calc(143vw);
+  }
+
+  .block_name_butt{
+    display: none;
   }
 
 }
