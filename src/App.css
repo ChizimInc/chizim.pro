@@ -443,6 +443,7 @@ button:hover{
     width: 175px;
     display: flex;
     flex-direction: column;
+    margin-top: 20px !important;
   }
 
   .social {
@@ -532,6 +533,10 @@ button:hover{
 
   .icons span {
     cursor: pointer;
+  }
+
+  .icons{
+    margin-top: 15px !important;
   }
 
 

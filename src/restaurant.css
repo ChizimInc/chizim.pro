@@ -302,7 +302,7 @@ header .left_header{
   background-image: url('./img/portfolio/restaurant/meniu_pics1.jpg');
 }
 
-.content_slide .top{
+.content_slide > .content_top{
   width: 77px;
   position: relative;
   top: 5px;
@@ -532,7 +532,7 @@ header .left_header{
   align-items: center;
 }
 
-.container3 .top{
+.container3 > .top{
   max-width: 1289px;
   display: flex;
   flex-direction: column;
@@ -548,7 +548,7 @@ header .left_header{
   overflow-x: hidden;
 }
 
-.container3 .top .photo{
+.container3 .content_top .photo{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -1022,7 +1022,7 @@ header .left_header{
 
 
 @media (max-width: 1278px){
-  .container3 .top{
+  .container3 > .top{
     width: 100%;
   }
   .container1 {

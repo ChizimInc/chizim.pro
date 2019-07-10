@@ -221,7 +221,7 @@ class Portfolio_restaurant extends Component {
             <div className="slider_1" style={ { marginLeft: `${ this.state.pos }px` } }>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -234,7 +234,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -247,7 +247,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -260,7 +260,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -273,7 +273,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -286,7 +286,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -299,7 +299,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -314,7 +314,7 @@ class Portfolio_restaurant extends Component {
             <div className="slider_2" style={ { marginLeft: `${ this.state.pos }px` } }>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -327,7 +327,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -340,7 +340,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -353,7 +353,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -366,7 +366,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -379,7 +379,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">
@@ -392,7 +392,7 @@ class Portfolio_restaurant extends Component {
               </div>
               <div className="element_slider">
                 <div className="content_slide">
-                  <div className="top">
+                  <div className="content_top">
                     <p>Блюдо дня</p>
                   </div>
                   <div className="bottom">

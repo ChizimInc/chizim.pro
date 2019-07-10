@@ -25,7 +25,7 @@ background-color: #f5f6fa;
 }
 
 .right > .social > .icons {
-  align-items: center;
+  align-items: flex-start;
 }
 
 .right > .social{
@@ -99,8 +99,8 @@ height: 500px;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-image: url('./img/Ellipse_1.png');
-background-position: right bottom;
+background-image: url('./img/Ellipse_1_2.png');
+background-position: 106% bottom;
 background-repeat: no-repeat;
 background-size: 490px 89%;
 }
@@ -109,7 +109,7 @@ background-size: 490px 89%;
 
 .top {
 display: flex;
-width: 890px;
+width: 65em;
 justify-content: space-between;
 }
 
@@ -171,7 +171,7 @@ font-size: 15pt
 .menu_content {
 display: flex;
 flex-direction: column;
-width: 890px;
+width: 65em;
 justify-content: center;
 height: 100%;
 }
