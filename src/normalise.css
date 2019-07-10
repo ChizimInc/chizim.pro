@@ -255,7 +255,7 @@
 
   .app_menu {
     height: 575px;
-    background-size: 468px 70%;
+    background-size: 506px 70%;
     background-position: center 138px;
   }
 
@@ -277,7 +277,7 @@
 
 @media (max-width: 472px) {
   .app_menu {
-    background-size: 103% 100vw !important;
+    background-size: 110% 100vw !important;
     background-position: -9px 140px;
   }
 
