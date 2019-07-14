@@ -6,19 +6,19 @@
   text-decoration: none;
 }
 
-.container_hall .top {
+.container_hall .top_hall {
   display: flex;
   height: 124px;
   justify-content: space-around;
   align-items: center;
 }
 
-.container_hall > i.fab:nth-child(1) {
+.social-top > i.fab:nth-child(1) {
   font-size: 21pt;
   color: #2727b1;
 }
 
-.container_hall > i.fab:nth-child(2) {
+.social-top > i.fab:nth-child(2) {
   font-size: 21pt;
   color: #b14c27;
 }
@@ -228,7 +228,7 @@ section .link{
 }
 
 .block-item p{
-  width: 88px;
+  width: 101px;
 }
 
 .block-item i{

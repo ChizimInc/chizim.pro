@@ -7,15 +7,28 @@ class Hall extends Component {
   constructor(props){
     super(props);
     this.state = {
-      pos : 0
+      poss : 0
     };
+  }
+
+  sliderTime = () => {
+    if (this.state.poss > -400) {
+      this.setState({poss: this.state.poss - 100});
+    }else{
+      this.setState({poss: 0});
+    }
+  }
+
+
+  componentDidMount(){
+    let interval = setInterval(this.sliderTime, 5000);
   }
 
   render(){
   return(
     <div className='container_hall' id='container_hall'>
       <header>
-        <div className="top">
+        <div className="top_hall">
           <div className="social-top">
             <i className="fab fa-facebook-square"></i>
             <i className="fab fa-odnoklassniki-square"></i>
@@ -90,7 +103,7 @@ class Hall extends Component {
 
       <main>
         <div className="slider">
-          <div className="slider-container">
+          <div className="slider-container" style={ { marginLeft: `${ this.state.poss }%` } }>
             <div className="slider-item slider-item1"></div>
             <div className="slider-item slider-item2"></div>
             <div className="slider-item slider-item3"></div>

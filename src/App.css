@@ -72,6 +72,7 @@ button:hover{
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
+    transition: 1s;
   }
 
   .whatido h2 {
@@ -227,7 +228,7 @@ button:hover{
     cursor: pointer;
   }
 
-  .slider {
+  .portfolio > .slider {
     width: 1030px;
     height: 229px;
     background-color: #fbfbfb;

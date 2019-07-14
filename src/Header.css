@@ -1,3 +1,75 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  transform: translateY(5%);
+}
+.app > p {
+  font-size: 90%;
+}
+
+label, .toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+label {
+  width: 100%;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  margin: 1.8rem 0 4rem 0;
+  cursor: pointer;
+}
+.toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.names {
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.dark {
+  opacity: .5;
+}
+/* -------- Switch Styles ------------*/
+[type="checkbox"] {
+  display: none;
+}
+/* Toggle */
+[type="checkbox"]:checked + .app .toggle{
+  transform: translateX(100%);
+  background-color: #34323D;
+}
+[type="checkbox"]:checked + .app .dark{
+  color: white;
+  opacity: 1;
+}
+[type="checkbox"]:checked + .app .light{
+  opacity: .5;
+  color: white
+}
+
+[type="checkbox"]:checked + .app label{
+  /* background-color: white; */
+}
+/* App */
+[type="checkbox"]:checked + .container{
+  background-color:  grey;
+  color: white;
+}
+
 /* @font-face {
   font-family: "SanFrancisco";
   src: url("./SF-Font-Pro.dmg");
@@ -21,7 +93,12 @@ display: flex;
 
 body > header {
 /* font-family: SanFrancisco; */
-background-color: #f5f6fa;
+  background-color: #f5f6fa;
+  transition: 1s;
+}
+
+.container > header:nth-child(1) {
+  transition: 1s;
 }
 
 .right > .social > .icons {
@@ -94,35 +171,40 @@ background-color: #f5f6fa;
 /* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
 
 .app_menu {
-width: 100vw;
-height: 500px;
-display: flex;
-flex-direction: column;
-align-items: center;
-background-image: url('./img/Ellipse_1_2.png');
-background-position: 106% bottom;
-background-repeat: no-repeat;
-background-size: 575px 89%;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./img/Ellipse_1_2.png');
+  background-position: 106% bottom;
+  background-repeat: no-repeat;
+  background-size: 575px 89%;
 }
 
 /* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
 
 .top {
-display: flex;
-width: 65em;
-justify-content: space-between;
+  display: flex;
+  width: 65em;
+  justify-content: space-between;
 }
 
 /* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
 
 .left {
-display: flex;
+  display: flex;
+}
+
+.top > .left > a {
+  text-decoration: none;
+  color: unset;
 }
 
 /* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
 
 .right {
-display: flex;
+  display: flex;
 }
 
 /* Element | file:///C:/Users/cezar/Documents/Work%20Place/chizim_header/header.html */
@@ -153,7 +235,8 @@ margin-top: 0;
 }
 
 .block_name_butt{
-margin-top: 70px;
+  margin-top: 36px;
+  width: 29%;
 }
 
 .block_name {
