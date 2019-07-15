@@ -29,6 +29,16 @@ import logo_text from './img/logo_text_2.png'
 // end of import image
 
 class App extends Component {
+
+
+  // if (localStorage.getItem('dark_mode') !== 'undefined') {
+  //   let dark_set = localStorage.getItem('dark_mode');
+  //   return dark_set;
+  // }else{
+  //   let dark_set = true;
+  //   return dark_set;
+  // }
+
   constructor(props){
     super(props);
     this.state = {
@@ -37,18 +47,13 @@ class App extends Component {
       dark : true,
       container_back: '#fbfbfb',
       whatido_back: '#fff',
-      text_color: '#000'
+      text_color: '#000',
+      box_shadow: '0 2px 15px rgba(0,0,0,.15)'
     };
   }
 
   componentDidMount(){
-    let whatido_style = {
-      backgroundColor: '#fff',
-      color: '#000'
-    }
-
-    return whatido_style;
-
+    let isDark = localStorage.getItem('dark_mode');
   }
 
   toggleMode = () => {
@@ -57,10 +62,14 @@ class App extends Component {
       this.setState({container_back: "#26242E"});
       this.setState({text_color: '#e4dada'});
       this.setState({whatido_back: '#212121'});
+      this.setState({box_shadow: '0px 0px 9px rgb(229,229,229,0.6)'});
+      localStorage.setItem('dark_mode', true);
     }else{
       this.setState({container_back : '#fbfbfb'});
       this.setState({text_color: '#000'});
       this.setState({whatido_back: '#fff'});
+      this.setState({box_shadow: '0 2px 15px rgba(0,0,0,.15)'});
+      localStorage.setItem('dark_mode', false);
     }
 
     let whatido_style = {
@@ -128,6 +137,7 @@ render(){
                 <div id="loader"></div>
               </div>
             </div>
+            <p>Loading...</p>
           </div>
           </Placeholder>
       </Preloader>
@@ -167,7 +177,7 @@ render(){
               <div class="app">
                   <div class="content">
                     <label for="switch" onClick={this.toggleMode.bind(this)}>
-                      <div class="toggle"></div>
+                      <div class="toggle" style={ {boxShadow: `${this.state.box_shadow}` } }></div>
                       <div class="names">
                         <p class="light">Light</p>
                         <p class="dark">Dark</p>
@@ -218,7 +228,7 @@ render(){
 
           <h2>Примеры наших работ</h2>
 
-          <div className="slider" style={portfolio_style}>
+          <div className="slider" style={{backgroundColor: `${this.state.container_back}`}}>
               <div className="circle-left" onClick={this.toLeft.bind(this)}>
                   <img id="to_left" src={arrow}/>
               </div>

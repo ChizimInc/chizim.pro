@@ -57,12 +57,59 @@ button:hover{
     font-family: SanFrancisco;
   }
 
+  .container_preloader p {
+    display: none;
+  }
+
   .get-order {
     display: none;
   }
 
   .get-order-active {
     display: block;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+  }
+
+  .right button {
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    margin-top: 5px;
+    color: #f53f4f;
+    border: 1px solid #f82370;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+
+  .right button{
+    overflow: hidden;
+  }
+
+  .right button:hover {
+    background-color: #f82370;
+    color: #fff;
+  }
+
+
+  .left p {
+    cursor: pointer;
+  }
+
+  .left p:hover {
+    text-decoration: underline;
+    text-decoration-color: #fc557c;
+    color: #fc557c;
   }
 
   .whatido {

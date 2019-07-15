@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import About from './About';
 import Notfound from './NotFound';
-import Portfolio from './Portfolio';
 import Portfolio_restaurant from './Portfolio_restaurant'
 import Hall from './city_hall_page'
 import * as serviceWorker from './serviceWorker';
@@ -15,7 +14,6 @@ const routing = (
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
         <Route path="/portfolio/restaurant" component={Portfolio_restaurant} />
         <Route path="/portfolio/city_hall_page" component={Hall} />
         <Route component={Notfound} />
