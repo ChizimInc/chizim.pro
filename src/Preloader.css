@@ -21,6 +21,13 @@
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+  .loading{
+    width: 96px;
+    height: 114px;
+  }
+}
+
 .circle_c{
   width: 150px;
   height: 150px;
