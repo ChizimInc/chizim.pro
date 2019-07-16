@@ -10,9 +10,13 @@
   padding: 0;
 }
 
+.container_preloader p {
+  color: white;
+}
+
 .loading{
   width: 150px;
-  height: 150px;
+  height: 177px;
   background-image: url('./img/Logo_mini.png');
   background-size: cover;
 }

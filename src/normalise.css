@@ -330,13 +330,20 @@
 
 @media (max-width: 380px) {
 
-  /* .block_name {
-    margin-top: calc(157vw);
+  .app_menu {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .container > header:nth-child(1) {
-    height: 905px;
-  } */
+  .menu_content {
+    justify-content: unset;
+    height: 395px;
+  }
+
+  .block_name {
+    margin-top: unset;
+  }
 
 }
 
@@ -364,20 +371,12 @@
     font-size: 12pt;
   }
 
-  .container > header:nth-child(1) {
-    height: 785px;
-  }
-
-   .block_name {
-    margin-top: calc(143vw);
-  }
-
   .block_name_butt{
     width: 212px;
   }
 
-}
-
-@media (max-width: 615px){
+  .container{
+    width: 101%;
+  }
 
 }

@@ -189,7 +189,7 @@ button:hover{
     display: flex;
   }
 
-  .block-top .block-name{
+  .block-top .block_name{
     margin-top: -10px;
     -webkit-margin-top: 65px;
     position: absolute;
@@ -200,7 +200,7 @@ button:hover{
 
 /* Inline #2 | http://localhost:3000/ */
 
-.block-top .block-name {
+.block-top .block_name {
     margin-top: 59px;
     display: flex;
     width: 1170px;
