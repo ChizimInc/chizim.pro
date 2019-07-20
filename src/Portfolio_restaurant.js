@@ -2,6 +2,9 @@ import './Preloader.css';
 import { Preloader, Placeholder } from 'react-preloading-screen';
 import React,{ Component } from 'react';
 import './restaurant.css'
+import { Link } from 'react-router-dom'
+import $ from "jquery";
+import { findDOMNode } from 'react-dom'
 
 import logo from './img/portfolio/restaurant/logo.png'
 import forma2 from './img/portfolio/restaurant/arrows/forma2.png'
@@ -86,6 +89,12 @@ class Portfolio_restaurant extends Component {
             </div>
             </Placeholder>
         </Preloader>
+        <Link to='/'>
+          <div className='go_back'>
+            <i class="fas fa-arrow-circle-left"></i>
+            <p>Назад к портфолио</p>
+          </div>
+        </Link>
         <div className="container1">
           <div className="content">
             <header>
@@ -139,7 +148,7 @@ class Portfolio_restaurant extends Component {
                     <a href="#">КОНТАКТЫ</a>
                   </nav>
 
-                  <a href="#" className="menu-btn" onClick={this.menu_active}>
+                  <a href="#" className="menu-btn" onClick={this.menu_active.bind(this)}>
                     <span></span>
                   </a>
               </div>

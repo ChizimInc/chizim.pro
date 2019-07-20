@@ -237,16 +237,16 @@ render(){
                   <div className="images-items" style={ { marginLeft: `${ this.state.pos }px` } }>
                       <Link className="link_port" to="/portfolio/restaurant" style={{color: `${this.state.text_color}`}}><div className="image">
                         <div className="pics1"></div>
-                        <p>site1</p>
+                        <p>Сайт ресторана</p>
                       </div></Link>
                       <Link className="link_port" to="/portfolio/city_hall_page#container_hall" style={{color: `${this.state.text_color}`}}><div className="image">
                         <div className="pics2"></div>
-                        <p>site2</p>
+                        <p>Сайт мэрии</p>
                       </div></Link>
-                      <Link className="link_port" to="/portfolio/site3" style={{color: `${this.state.text_color}`}}><div className="image">
+                      <a className="link_port" href="https://www.polzabio.ru/" target="_blank" style={{color: `${this.state.text_color}`}}><div className="image">
                         <div className="pics3"></div>
-                        <p>site3</p>
-                      </div></Link>
+                        <p>Рекламный сайт биоудобрения</p>
+                      </div></a>
                       <Link className="link_port" to="/portfolio/site4" style={{color: `${this.state.text_color}`}}><div className="image">
                         <div className="pics4"></div>
                         <p>site4</p>

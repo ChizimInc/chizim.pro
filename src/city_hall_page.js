@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import './Preloader.css';
+import React,{ Component } from 'react';
+import { Preloader, Placeholder } from 'react-preloading-screen';
 import './hall.css';
 import { Link } from 'react-router-dom'
 
@@ -27,6 +29,24 @@ class Hall extends Component {
   render(){
   return(
     <div className='container_hall' id='container_hall'>
+      <Preloader fadeDuration="1500">
+          <Placeholder>
+          <div className="container_preloader">
+            <div className="loading"></div>
+            <div className="circle_c">
+              <div id="loader-wrapper">
+                <div id="loader"></div>
+              </div>
+            </div>
+          </div>
+          </Placeholder>
+      </Preloader>
+      <Link to='/'>
+        <div className='go_back'>
+          <i class="fas fa-arrow-circle-left"></i>
+          <p>Назад к портфолио</p>
+        </div>
+      </Link>
       <header>
         <div className="top_hall">
           <div className="social-top">
