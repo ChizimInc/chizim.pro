@@ -65,6 +65,10 @@
   .app_menu > .top , .app_menu > .menu_content{
     width: 90%;
   }
+
+  .go_back{
+    left: 76%;
+  }
 }
 
 
@@ -86,7 +90,7 @@
     }
   }
 
-  .slider {
+  .portfolio > .slider {
     width: 649px !important;
   }
 
@@ -130,6 +134,10 @@
 
   .block_name_butt {
     width: 200px;
+  }
+
+  .go_back{
+    left: 70%;
   }
 
 }
@@ -179,10 +187,14 @@
   .block_name_butt {
       width: 151px;
   }
+
+  .go_back{
+    left: 61%;
+  }
 }
 
 @media (max-width: 748px) {
-  .slider{
+  .portfolio > .slider{
     width: 297px !important;
   }
   .circle-right  img {
@@ -294,6 +306,10 @@
     display: block;
   }
 
+  .go_back{
+    left: 51%;
+  }
+
 }
 
 @media (max-width: 490px) {
@@ -306,6 +322,16 @@
   .app_menu {
     background-size: 110% 100vw !important;
     background-position: -9px 140px;
+  }
+
+  .go_back {
+    left: 5%;
+    width: 90%;
+    opacity: .9;
+  }
+
+  .go_back > .fa-arrow-circle-left {
+    margin-right: -95px;
   }
 
 

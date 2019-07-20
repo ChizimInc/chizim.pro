@@ -1,6 +1,7 @@
 import './Preloader.css';
 import React,{ Component } from 'react';
 import { Preloader, Placeholder } from 'react-preloading-screen';
+import './normalise.css';
 import './hall.css';
 import { Link } from 'react-router-dom'
 
@@ -24,6 +25,7 @@ class Hall extends Component {
 
   componentDidMount(){
     let interval = setInterval(this.sliderTime, 5000);
+    document.title = "Portfolio | Сайт мэрии";
   }
 
   render(){

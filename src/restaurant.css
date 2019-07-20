@@ -11,23 +11,6 @@
   font-family: noset !important;
 }
 
-.go_back{
-  display: flex;
-  position: fixed;
-  background-color: #353b48;
-  align-items: center;
-  top: 87%;
-  left: 81%;
-  width: 219px;
-  height: 58px;
-  color: white;
-  justify-content: space-evenly;
-  border-radius: 10px;
-  font-size: 14pt;
-  z-index: 99;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 7px 4px 0px;
-}
-
 .container1 {
   height: 554px;
   width: 100%;

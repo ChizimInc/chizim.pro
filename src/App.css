@@ -220,6 +220,58 @@ button:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 5px 7px 4px 0px;
   }
 
+  @media (max-width: 1124px){
+    .app_menu > .top , .app_menu > .menu_content{
+      width: 90%;
+    }
+
+    .go_back{
+      left: 76%;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .go_back{
+      left: 70%;
+    }
+  }
+
+  @media (max-width: 776px){
+    .block_name_butt {
+        width: 151px;
+    }
+
+    .go_back{
+      left: 61%;
+    }
+  }
+
+  @media (max-width: 600px){
+    .go_back{
+      left: 51%;
+    }
+  }
+
+  @media (max-width: 472px) {
+
+    .go_back {
+      left: 5%;
+      width: 90%;
+      opacity: .9;
+    }
+    .go_back > .fa-arrow-circle-left {
+      margin-right: -95px;
+    }
+  }
+
+  @media (max-width: 464px) {
+    .go_back > .fa-arrow-circle-left {
+      margin-right: -9px;
+    }
+  }
+
+
+
 
 /* Inline #2 | http://localhost:3000/ */
 

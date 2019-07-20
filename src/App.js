@@ -54,7 +54,9 @@ class App extends Component {
 
   componentDidMount(){
     let isDark = localStorage.getItem('dark_mode');
+    document.title = "Cezar's personal page";
   }
+
 
   toggleMode = () => {
     this.setState({dark: !this.state.dark})
