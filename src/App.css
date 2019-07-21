@@ -209,7 +209,7 @@ button:hover{
     background-color: #353b48;
     align-items: center;
     top: 87%;
-    left: 81%;
+    right: 60px;
     width: 219px;
     height: 58px;
     color: white;
@@ -224,33 +224,14 @@ button:hover{
     .app_menu > .top , .app_menu > .menu_content{
       width: 90%;
     }
-
-    .go_back{
-      left: 76%;
-    }
-  }
-
-  @media (max-width: 950px) {
-    .go_back{
-      left: 70%;
-    }
   }
 
   @media (max-width: 776px){
     .block_name_butt {
         width: 151px;
     }
-
-    .go_back{
-      left: 61%;
-    }
   }
 
-  @media (max-width: 600px){
-    .go_back{
-      left: 51%;
-    }
-  }
 
   @media (max-width: 472px) {
 

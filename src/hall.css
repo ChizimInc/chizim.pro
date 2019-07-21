@@ -6,6 +6,7 @@
   text-decoration: none;
 }
 
+
 .container_hall .top_hall {
   display: flex;
   height: 124px;
@@ -174,7 +175,7 @@
 
 .slider-item1{
   background-image: url("./img/portfolio/hall/img1.jfif");
-  background-size: auto;
+  background-size: cover;
 }
 .slider-item2{
   background-image: url("./img/portfolio/hall/img2.jfif");
@@ -368,6 +369,12 @@ section .link{
  justify-content: center;
  height: 50px;
  align-items: center;
+}
+
+@media (min-width: 1520px) {
+  main > .slider {
+    height: 557px;
+  }
 }
 
 @media (max-width: 842px) {
