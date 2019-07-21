@@ -34,7 +34,7 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    if (sessionStorage.getItem('dark_mode') == 'true') {
+    if (localStorage.getItem('dark_mode') == 'true') {
       this.state = {
         pos : 0,
         burger_status: 0,
@@ -58,15 +58,15 @@ class App extends Component {
 
   componentDidMount(){
     document.title = "Cezar's personal page";
-    if (sessionStorage.getItem('dark_mode') == undefined) {
-      sessionStorage.setItem('dark_mode', false);
+    if (localStorage.getItem('dark_mode') == undefined) {
+      localStorage.setItem('dark_mode', false);
     }
 
   }
 
 
   toggleMode = () => {
-    let a = sessionStorage.getItem('dark_mode');
+    let a = localStorage.getItem('dark_mode');
     if (a == 'false') {
       a = 'true';
     }else{
@@ -77,13 +77,13 @@ class App extends Component {
       this.setState({text_color: '#e4dada'});
       this.setState({whatido_back: '#212121'});
       this.setState({box_shadow: '0px 0px 9px rgb(229,229,229,0.6)'});
-      sessionStorage.setItem('dark_mode', 'true');
+      localStorage.setItem('dark_mode', 'true');
     }else{
       this.setState({container_back : '#fbfbfb'});
       this.setState({text_color: '#000'});
       this.setState({whatido_back: '#fff'});
       this.setState({box_shadow: '0 2px 15px rgba(0,0,0,.15)'});
-      sessionStorage.setItem('dark_mode', false);
+      localStorage.setItem('dark_mode', false);
     }
 
     let whatido_style = {
@@ -143,7 +143,7 @@ render(){
 
   let input;
 
-  if (sessionStorage.getItem('dark_mode') == 'true') {
+  if (localStorage.getItem('dark_mode') == 'true') {
     input = 'checked';
   }else{
     input = '';
