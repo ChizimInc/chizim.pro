@@ -12,6 +12,7 @@ import a2 from './img/a2.png'
 import a3 from './img/a3.png'
 import './normalise.css'
 import './App.css';
+
 import { animateScroll as scroll } from "react-scroll";
 import MetaTags from 'react-meta-tags';
 import { Link } from 'react-router-dom'
@@ -31,47 +32,58 @@ import logo_text from './img/logo_text_2.png'
 class App extends Component {
 
 
-  // if (localStorage.getItem('dark_mode') !== 'undefined') {
-  //   let dark_set = localStorage.getItem('dark_mode');
-  //   return dark_set;
-  // }else{
-  //   let dark_set = true;
-  //   return dark_set;
-  // }
-
   constructor(props){
     super(props);
-    this.state = {
-      pos : 0,
-      burger_status: 0,
-      dark : true,
-      container_back: '#fbfbfb',
-      whatido_back: '#fff',
-      text_color: '#000',
-      box_shadow: '0 2px 15px rgba(0,0,0,.15)'
-    };
+    if (sessionStorage.getItem('dark_mode') == 'true') {
+      this.state = {
+        pos : 0,
+        burger_status: 0,
+        container_back: '#26242E',
+        whatido_back: '#212121',
+        text_color: '#e4dada',
+        box_shadow: '0px 0px 9px rgb(229,229,229,0.6)'
+      };
+    }else{
+      this.state = {
+        pos : 0,
+        burger_status: 0,
+        container_back: '#fbfbfb',
+        whatido_back: '#fff',
+        text_color: '#000',
+        box_shadow: '0 2px 15px rgba(0,0,0,.15)'
+      };
+    }
+
   }
 
   componentDidMount(){
-    let isDark = localStorage.getItem('dark_mode');
     document.title = "Cezar's personal page";
+    if (sessionStorage.getItem('dark_mode') == undefined) {
+      sessionStorage.setItem('dark_mode', false);
+    }
+
   }
 
 
   toggleMode = () => {
-    this.setState({dark: !this.state.dark})
-    if (this.state.dark == true) {
+    let a = sessionStorage.getItem('dark_mode');
+    if (a == 'false') {
+      a = 'true';
+    }else{
+      a = 'false';
+    }
+    if (a == 'true') {
       this.setState({container_back: "#26242E"});
       this.setState({text_color: '#e4dada'});
       this.setState({whatido_back: '#212121'});
       this.setState({box_shadow: '0px 0px 9px rgb(229,229,229,0.6)'});
-      localStorage.setItem('dark_mode', true);
+      sessionStorage.setItem('dark_mode', 'true');
     }else{
       this.setState({container_back : '#fbfbfb'});
       this.setState({text_color: '#000'});
       this.setState({whatido_back: '#fff'});
       this.setState({box_shadow: '0 2px 15px rgba(0,0,0,.15)'});
-      localStorage.setItem('dark_mode', false);
+      sessionStorage.setItem('dark_mode', false);
     }
 
     let whatido_style = {
@@ -128,6 +140,14 @@ render(){
     backgroundColor: this.state.container_back,
     color: this.state.text_color
   };
+
+  let input;
+
+  if (sessionStorage.getItem('dark_mode') == 'true') {
+    input = 'checked';
+  }else{
+    input = '';
+  }
   return (
     <div className="container">
       <Preloader fadeDuration="1500">
@@ -143,7 +163,8 @@ render(){
           </div>
           </Placeholder>
       </Preloader>
-      <header style={ {backgroundColor: `${this.state.container_back}` } }>
+
+      <header ref="header" style={ {backgroundColor: `${this.state.container_back}` } }>
     		<div className="app_menu" style={ {color: `${this.state.text_color}` } }>
         <div className='icons_header_anim'>
          <img src={div}/>
@@ -175,7 +196,7 @@ render(){
     					<p>Frontend и backend-разработка</p>
     				</div>
     				<div className="block_name_butt">
-              <input type="checkbox" id="switch"/>
+              <input type="checkbox" id="switch" checked={input} />
               <div class="app">
                   <div class="content">
                     <label for="switch" onClick={this.toggleMode.bind(this)}>

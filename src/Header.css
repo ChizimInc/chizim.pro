@@ -97,6 +97,10 @@ body > header {
   transition: 1s;
 }
 
+.container > header {
+  transition: 1s;
+}
+
 .container > header:nth-child(1) {
   transition: 1s;
 }
