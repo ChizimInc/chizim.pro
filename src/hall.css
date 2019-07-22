@@ -500,7 +500,7 @@ section .link{
   }
 
   .contact-form {
-    width: 100%;
+    width: 96%;
   }
   .contact-form > p:nth-child(1) {
     margin: 0 auto;

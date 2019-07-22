@@ -261,7 +261,7 @@
 
 @media (max-width: 600px) {
   .reclama-block {
-    height: 423px !important;
+    height: 423px ;
   }
 
   .footer-content {
@@ -340,15 +340,21 @@
   }
 
   .go_back > .fa-arrow-circle-left {
-    margin-right: -95px;
+    margin-right: -38px;
   }
 
 
 }
 
+@media (max-width: 330px) {
+  .reclama-block {
+    height: 586px;;
+  }
+}
+
 @media (max-width: 414px) {
   .reclama-block {
-    height: 545px !important;
+    height: 545px ;
   }
 
   .one .block-one {

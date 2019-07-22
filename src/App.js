@@ -10,9 +10,9 @@ import a from './img/a.png'
 import a1 from './img/a1.png'
 import a2 from './img/a2.png'
 import a3 from './img/a3.png'
-import './normalise.css'
-import './App.css';
 
+import './App.css';
+import './normalise.css'
 import { animateScroll as scroll } from "react-scroll";
 import MetaTags from 'react-meta-tags';
 import { Link } from 'react-router-dom'
@@ -86,6 +86,7 @@ class App extends Component {
       localStorage.setItem('dark_mode', false);
     }
 
+  
     let whatido_style = {
       backgroundColor: this.state.whatido_back,
       color: this.state.text_color
