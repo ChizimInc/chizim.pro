@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.show{
+  display: unset;
+}
+
 /* Element | http://localhost:3000/about */
 
 .about_cont_min {
@@ -91,6 +95,22 @@
 
 .about_curse_name {
   font-size: 23px;
+}
+
+.hover__element{
+  position: absolute;
+  width: 75px;
+  background-color: #cec5c5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -36px;
+  display: none;
+}
+
+.hover__element:hover{
+  display: flex;
 }
 
 

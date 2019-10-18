@@ -8,7 +8,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  z-index: 999;
+  z-index: 999999999;
 }
 
 .container_preloader p {
@@ -22,12 +22,12 @@
   background-size: cover;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .loading{
     width: 96px;
     height: 114px;
   }
-}
+} */
 
 .circle_c{
   width: 150px;

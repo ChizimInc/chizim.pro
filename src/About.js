@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { TransitionGoup, CSSTransition } from "react-transition-group";
 import './Preloader.css'
 import './style/about.css'
 import { Preloader, Placeholder } from 'react-preloading-screen';
@@ -18,7 +19,23 @@ import webPack from './img/about/webPack.png'
 import node from './img/about/nodejs.png'
 import vector from './img/about/vector1.png'
 
-function About() {
+class About extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = 
+    {
+      show: false
+    };
+
+    this.show = this.show.bind(this);
+  }
+
+  show(){
+    this.setState()
+  }
+
+  render(){
     return (
       <div>
         <Preloader fadeDuration="1500">
@@ -76,11 +93,18 @@ function About() {
                 <div className='about_instruments_cont'>
                   <p>Владение инструментами</p>
                   <div className='about_instruments'>
-                    <img src={html} />
-                    <img src={css} />
-                    <img src={js} />
-                    <img src={jQuery} />
-                    <img src={linux} />
+                    <div>
+                      <div className='hover__element'>
+                        Html 5
+                      </div>
+                      <img src={html} />
+                      </div>
+                    <div><img src={css} /></div>
+                    <div><img src={js} /></div>
+                    <div><img src={jQuery} /></div>
+                    <div><img src={linux} /></div>
+                    
+                    
                     <img src={react} />
                     <img src={redux} />
                     <img src={node} />
@@ -88,7 +112,6 @@ function About() {
                     <img src={php} />
                     <img src={webPack} />
                     <img src={git} />
-
                   </div>
                 </div>
                 <div className='about_me'>
@@ -110,5 +133,6 @@ function About() {
         </div>
       </div>
     )
+  }
 }
 export default About;

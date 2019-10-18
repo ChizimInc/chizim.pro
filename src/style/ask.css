@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.ask__body{
+    background-image: linear-gradient(#43cea2, #185a9d);
+    height: 100vh;
+    width: 100vw;
+}
+
+.ask__body .left p{
+    color: white;
+}
+
+.About_cont {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ask_container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 60%;
+}
+
+.about_photo {
+    margin: 0 auto;
+}
+
+.ask_container > textarea:nth-child(2) {
+    height: 103px;
+    border-radius: 10px;
+}
+
+.ask_container button {
+    cursor: pointer;
+    margin-top: -50px;
+    border-radius: 10px;
+    height: 26px;
+    z-index: 998;
+}
+
+.ask_container > textarea:nth-child(2) {
+    height: 103px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media(min-width: 461px){
+    .ask_container {
+        width: 270px;
+    }
+}
+   
+   
